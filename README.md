@@ -23,6 +23,7 @@ The local setup supports SQLite and PostgreSQL. Agent 1 uses GroqCloud with open
 - [GroqCloud adapter](backend/app/integrations/groq_cloud.py), [resume agent](backend/app/agents/resume_agent.py), [scoring validation](backend/app/services/scoring.py).
 - [LangGraph](backend/app/workflows/hiring_graph.py), [evaluation/approval service](backend/app/services/evaluation_service.py), [review API](backend/app/api/evaluations.py).
 - [Streamlit entrypoint](frontend/app.py), [dashboard pages](frontend/pages), [architecture details](docs/architecture.md), [API guide](docs/api.md), [Phase 3 handoff](docs/phase3.md).
+- [Render + Streamlit deployment guide](docs/render-streamlit-deployment.md) and root [Render Blueprint](render.yaml).
 
 ## Windows setup
 

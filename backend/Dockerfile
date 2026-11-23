@@ -10,4 +10,4 @@ COPY sample_data /app/sample_data
 RUN useradd --create-home --uid 10001 hiring && mkdir -p /app/storage/resumes && chown -R hiring:hiring /app/storage
 USER hiring
 EXPOSE 8000
-CMD ["sh", "-c", "python -m alembic -c backend/alembic.ini upgrade head && python -m uvicorn app.main:app --app-dir backend --host 0.0.0.0 --port 8000"]
+CMD ["sh", "-c", "python -m alembic -c backend/alembic.ini upgrade head && exec python -m uvicorn app.main:app --app-dir backend --host 0.0.0.0 --port ${PORT:-8000}"]

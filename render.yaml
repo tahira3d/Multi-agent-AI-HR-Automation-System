@@ -1,0 +1,74 @@
+# Render Blueprint for the FastAPI API used by the Streamlit Community Cloud UI.
+#
+# Candidate resumes require durable, private storage, so the API uses a paid
+# service plan. Render prompts for every `sync: false` value during its first
+# Blueprint setup instead of storing credentials in this repository.
+services:
+  - type: web
+    name: multi-agent-hr-api
+    runtime: docker
+    region: oregon
+    plan: 0.5c-512mb
+    dockerContext: .
+    dockerfilePath: backend/Dockerfile
+    healthCheckPath: /health/ready
+    disk:
+      name: candidate-resume-storage
+      mountPath: /app/storage
+      sizeGB: 10
+    envVars:
+      - key: ENV
+        value: production
+      - key: DEBUG
+        value: "false"
+      - key: AUTO_CREATE_TABLES
+        value: "false"
+      - key: STORAGE_DIR
+        value: /app/storage/resumes
+      - key: CANDIDATE_RETENTION_DAYS
+        value: "365"
+      - key: DATABASE_URL
+        fromDatabase:
+          name: multi-agent-hr-db
+          property: connectionString
+      - key: CHECKPOINT_DATABASE_URL
+        fromDatabase:
+          name: multi-agent-hr-db
+          property: connectionString
+      - key: REDIS_URL
+        fromService:
+          type: keyvalue
+          name: multi-agent-hr-cache
+          property: connectionString
+      - key: JWT_SECRET_KEY
+        generateValue: true
+      - key: PII_ENCRYPTION_KEY
+        generateValue: true
+      - key: CORS_ORIGINS
+        sync: false
+      - key: AZURE_OPENAI_ENDPOINT
+        sync: false
+      - key: AZURE_OPENAI_API_KEY
+        sync: false
+      - key: AZURE_OPENAI_DEPLOYMENT
+        sync: false
+      - key: AZURE_OPENAI_API_VERSION
+        value: "2024-10-21"
+
+  # Production configuration validates a Redis-compatible endpoint. Keep it
+  # private; the service never needs public cache access.
+  - type: keyvalue
+    name: multi-agent-hr-cache
+    region: oregon
+    plan: free
+    ipAllowList: []
+    maxmemoryPolicy: noeviction
+    persistenceMode: off
+
+databases:
+  - name: multi-agent-hr-db
+    region: oregon
+    plan: 0.5c-1g
+    databaseName: hr_hiring
+    user: hr_hiring
+    ipAllowList: []
