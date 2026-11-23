@@ -1,0 +1,62 @@
+[
+  {
+    "job_title": "Backend Python Developer",
+    "job_description": "SYNTHETIC DEMO ROLE. Develop Python and FastAPI REST APIs backed by PostgreSQL. Write pytest suites, document APIs and collaborate using Git. Demonstrated project delivery matters more than keyword repetition.",
+    "required_skills": [
+      "Python",
+      "FastAPI",
+      "PostgreSQL"
+    ],
+    "preferred_skills": [
+      "Docker",
+      "Azure"
+    ],
+    "min_experience_years": 2,
+    "location": "Remote",
+    "work_arrangement": "remote",
+    "screening_questions": [
+      "Describe a Python API you delivered.",
+      "Explain a PostgreSQL query you improved."
+    ]
+  },
+  {
+    "job_title": "Data Analyst",
+    "job_description": "SYNTHETIC DEMO ROLE. Analyze operational datasets using SQL and Python pandas, validate data quality, document assumptions and communicate findings in dashboards. Relevant analytical project evidence is required.",
+    "required_skills": [
+      "SQL",
+      "Python",
+      "pandas"
+    ],
+    "preferred_skills": [
+      "Power BI",
+      "PostgreSQL"
+    ],
+    "min_experience_years": 1,
+    "location": "Synthetic office",
+    "work_arrangement": "hybrid",
+    "screening_questions": [
+      "How did you validate a dataset?",
+      "Explain an analysis that affected a business decision."
+    ]
+  },
+  {
+    "job_title": "Frontend React Developer",
+    "job_description": "SYNTHETIC DEMO ROLE. Develop accessible React interfaces with TypeScript, integrate REST APIs, write component tests and collaborate through Git. Assess demonstrated user-interface implementation and accessibility work.",
+    "required_skills": [
+      "React",
+      "TypeScript",
+      "CSS"
+    ],
+    "preferred_skills": [
+      "Testing Library",
+      "Accessibility"
+    ],
+    "min_experience_years": 2,
+    "location": "Remote",
+    "work_arrangement": "remote",
+    "screening_questions": [
+      "Explain a React component you implemented.",
+      "How do you test keyboard accessibility?"
+    ]
+  }
+]

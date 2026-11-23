@@ -1,0 +1,37 @@
+Job Title: Backend Python Developer (AI Platform)
+Location: Lahore, Pakistan (hybrid)  |  Employment: Full-time
+
+About the role
+We are building internal AI-powered workflow tools. You will design and maintain Python
+back-end services and the APIs that connect our applications, databases and language-model
+components.
+
+Required skills (must-have)
+- Python (3+ years of professional experience)
+- FastAPI or a comparable Python web framework, with REST API design
+- SQL and PostgreSQL (schema design, query optimisation)
+- Docker and Git
+
+Preferred skills
+- Experience with LLM applications (LangChain, LangGraph or Azure OpenAI)
+- CI/CD (e.g. GitHub Actions) and cloud deployment (Azure preferred)
+- Automated testing (pytest)
+
+Responsibilities
+- Build and maintain secure REST APIs and background workflows
+- Design relational database schemas and keep them performant
+- Write automated tests and participate in code review
+- Collaborate with the HR technology team on workflow requirements
+
+Minimum experience: 3 years in back-end development (or equivalent project experience).
+
+Suggested scoring rubric (configurable)
+- Required skills 40%, relevant experience 25%, role-related projects 20%,
+  education/certifications 10%, other job-related evidence 5%
+
+Screening questions (approved, job-related only)
+1. Briefly describe your most relevant back-end project.
+2. How many years have you worked with Python and PostgreSQL?
+3. What is your notice period / earliest start date?
+4. Are you comfortable with the hybrid arrangement in Lahore?
+5. Do you have any questions about the role?

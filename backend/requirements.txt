@@ -1,0 +1,25 @@
+fastapi>=0.115
+uvicorn[standard]>=0.30
+sqlalchemy>=2.0
+alembic>=1.13
+psycopg[binary]>=3.2
+python-multipart>=0.0.9
+pydantic>=2.7
+pydantic-settings==2.16.3
+PyJWT>=2.8
+pypdf>=4.2
+cryptography>=42        # required by pypdf to open AES-encrypted PDFs
+python-docx>=1.1
+httpx>=0.27             # FastAPI TestClient
+pytest>=8.0
+# Only needed to regenerate sample data: reportlab, pillow
+reportlab>=4.0
+pillow>=10.0
+PyMuPDF>=1.26,<2
+argon2-cffi>=23.1,<26
+openai>=2,<3             # GroqCloud OpenAI-compatible API; no additional SDK required
+langgraph>=1.0,<2
+langgraph-checkpoint-sqlite>=3.0.1,<5
+langgraph-checkpoint-postgres>=3.0,<5
+psycopg-pool>=3.2,<4
+ruff>=0.12,<1

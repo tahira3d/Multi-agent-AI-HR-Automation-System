@@ -1,0 +1,14 @@
+# Additional local voice packages verified on Windows x64 / Python 3.11.
+faster-whisper==1.2.1
+piper-tts==1.8.0
+av==16.1.0
+ctranslate2==4.9.0
+huggingface-hub==0.36.2
+tokenizers==0.22.2
+onnxruntime==1.32.0
+filelock==4.2.12
+fsspec==2026.9.0
+pathvalidate==3.3.1
+flatbuffers==25.12.19
+numpy==2.4.6
+httpx==0.28.1

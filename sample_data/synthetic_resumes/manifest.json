@@ -1,0 +1,137 @@
+[
+  {
+    "file": "01_ayesha_raza.pdf",
+    "kind": "normal",
+    "expected_status": "parsed",
+    "expected_reason": null,
+    "candidate_name": "Ayesha Raza"
+  },
+  {
+    "file": "02_bilal_ahmed.docx",
+    "kind": "normal",
+    "expected_status": "parsed",
+    "expected_reason": null,
+    "candidate_name": "Bilal Ahmed"
+  },
+  {
+    "file": "03_sana_iqbal.pdf",
+    "kind": "normal",
+    "expected_status": "parsed",
+    "expected_reason": null,
+    "candidate_name": "Sana Iqbal"
+  },
+  {
+    "file": "04_hamza_sheikh.docx",
+    "kind": "normal",
+    "expected_status": "parsed",
+    "expected_reason": null,
+    "candidate_name": "Hamza Sheikh"
+  },
+  {
+    "file": "05_maria_khan.pdf",
+    "kind": "normal",
+    "expected_status": "parsed",
+    "expected_reason": null,
+    "candidate_name": "Maria Khan"
+  },
+  {
+    "file": "06_usman_tariq.docx",
+    "kind": "normal",
+    "expected_status": "parsed",
+    "expected_reason": null,
+    "candidate_name": "Usman Tariq"
+  },
+  {
+    "file": "07_noor_fatima.pdf",
+    "kind": "normal",
+    "expected_status": "parsed",
+    "expected_reason": null,
+    "candidate_name": "Noor Fatima"
+  },
+  {
+    "file": "08_daniyal_malik.pdf",
+    "kind": "normal",
+    "expected_status": "parsed",
+    "expected_reason": null,
+    "candidate_name": "Daniyal Malik"
+  },
+  {
+    "file": "09_hira_aslam.docx",
+    "kind": "normal",
+    "expected_status": "parsed",
+    "expected_reason": null,
+    "candidate_name": "Hira Aslam"
+  },
+  {
+    "file": "10_farhan_qureshi.pdf",
+    "kind": "normal",
+    "expected_status": "parsed",
+    "expected_reason": null,
+    "candidate_name": "Farhan Qureshi"
+  },
+  {
+    "file": "11_zainab_shah.docx",
+    "kind": "normal",
+    "expected_status": "parsed",
+    "expected_reason": null,
+    "candidate_name": "Zainab Shah"
+  },
+  {
+    "file": "12_imran_yousaf.pdf",
+    "kind": "normal",
+    "expected_status": "parsed",
+    "expected_reason": null,
+    "candidate_name": "Imran Yousaf"
+  },
+  {
+    "file": "13_scanned_resume.pdf",
+    "kind": "scanned",
+    "expected_status": "needs_manual_review",
+    "expected_reason": "scanned_or_image_only"
+  },
+  {
+    "file": "14_password_protected.pdf",
+    "kind": "encrypted",
+    "expected_status": "needs_manual_review",
+    "expected_reason": "password_protected"
+  },
+  {
+    "file": "15_corrupt_resume.pdf",
+    "kind": "corrupt",
+    "expected_status": "needs_manual_review",
+    "expected_reason": "unreadable"
+  },
+  {
+    "file": "16_prompt_injection.pdf",
+    "kind": "prompt_injection",
+    "expected_status": "parsed",
+    "expected_reason": null,
+    "expected_warning_contains": "possible_prompt_injection",
+    "candidate_name": "Kamran Javed"
+  },
+  {
+    "file": "17_duplicate_of_03.pdf",
+    "kind": "duplicate",
+    "expected_status": "parsed",
+    "expected_reason": null,
+    "duplicate_of": "03_sana_iqbal.pdf"
+  },
+  {
+    "file": "18_docx_named_pdf.pdf",
+    "kind": "extension_mismatch",
+    "expected_status": "rejected",
+    "expected_reason": "content_mismatch"
+  },
+  {
+    "file": "19_empty_document.docx",
+    "kind": "empty_document",
+    "expected_status": "needs_manual_review",
+    "expected_reason": "empty_document"
+  },
+  {
+    "file": "20_unsupported_resume.rtf",
+    "kind": "unsupported_type",
+    "expected_status": "rejected",
+    "expected_reason": "unsupported_type"
+  }
+]

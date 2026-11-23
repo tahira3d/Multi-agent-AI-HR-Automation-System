@@ -1,0 +1,12 @@
+[
+  {
+    "scenario": "adaptive",
+    "report": "REPLACE_WITH_PATH_TO_adaptive-report.json",
+    "transcript": "REPLACE_WITH_PATH_TO_adaptive-transcript.json",
+    "requires_report_correction": null,
+    "followups_reviewed": null,
+    "relevant_followups": null,
+    "substantive_claims_reviewed": null,
+    "unsupported_claims": null
+  }
+]
